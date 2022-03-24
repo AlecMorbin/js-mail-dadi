@@ -1,12 +1,13 @@
-let numeroPC = Math.random();
-console.log(numeroPC);
+let numeroPC = Math.floor( ( Math.random() * 6 ) + 1 );
 
-numeroPC *= 6;
-console.log(numeroPC);
+console.log("Il numero del computer è: "+numeroPC);
 
-numeroPC = Math.floor(numeroPC);
-console.log(numeroPC);
+let numeroG1 = Math.floor( ( Math.random() * 6 ) + 1 );
 
-numeroPC += 1;
-console.log(numeroPC); 
+console.log("Il tuo numero è: "+numeroG1);
 
+if(numeroG1>numeroPC) {
+    console.log("Hai vinto!");
+}else {
+    console.log("Hai perso, ha vinto il Computer!");
+}
